@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+  <script src="weather.js" async></script>   
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Weather Forecast</h1>
+      <form class="search-form" id="searchForm">
+        <div class="search-container">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="searchInput" placeholder="Search for a city...">
+        </div>
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </div>
+    
+    <div class="card">
+      <div class="weather-header">
+        <div class="weather-info">
+          <div class="location-info">
+            <h2 id="location">San Francisco</h2>
+            <p class="date-time" id="dateTime"></p>
+          </div>
+          <div class="temperature-info">
+            <div class="weather-icon">☁️</div>
+            <div>
+              <div class="temperature" id="temperature">72°F</div>
+              <div class="condition">Partly Cloudy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-stats">
+        <div class="stat">
+          <div class="stat-icon">🌡️</div>
+          <div>
+            <div class="stat-label">Feels Like</div>
+            <div class="stat-value">70°F</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">💨</div>
+          <div>
+            <div class="stat-label">Wind</div>
+            <div class="stat-value">8 mph</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">💧</div>
+          <div>
+            <div class="stat-label">Humidity</div>
+            <div class="stat-value">65%</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">🌧️</div>
+          <div>
+            <div class="stat-label">Chance of Rain</div>
+            <div class="stat-value">10%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">7-Day Forecast</h3>
+        </div>
+        <div class="forecast">
+          <div class="forecast-day">
+            <div class="day-name">Mon</div>
+            <div class="forecast-icon">☀️</div>
+            <div class="forecast-temp">72°</div>
+            <div class="forecast-condition">Sunny</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Tue</div>
+            <div class="forecast-icon">⛅</div>
+            <div class="forecast-temp">68°</div>
+            <div class="forecast-condition">Partly Cloudy</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Wed</div>
+            <div class="forecast-icon">☁️</div>
+            <div class="forecast-temp">70°</div>
+            <div class="forecast-condition">Cloudy</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Thu</div>
+            <div class="forecast-icon">🌦️</div>
+            <div class="forecast-temp">65°</div>
+            <div class="forecast-condition">Light Rain</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Fri</div>
+            <div class="forecast-icon">🌧️</div>
+            <div class="forecast-temp">63°</div>
+            <div class="forecast-condition">Rain</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Sat</div>
+            <div class="forecast-icon">⛅</div>
+            <div class="forecast-temp">68°</div>
+            <div class="forecast-condition">Partly Cloudy</div>
+          </div>
+          <div class="forecast-day">
+            <div class="day-name">Sun</div>
+            <div class="forecast-icon">☀️</div>
+            <div class="forecast-temp">72°</div>
+            <div class="forecast-condition">Sunny</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Weather Details</h3>
+        </div>
+        <div class="weather-details">
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">🌅</span>
+              <span class="detail-text">Sunrise</span>
+            </div>
+            <div class="detail-value">6:42 AM</div>
+          </div>
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">🌇</span>
+              <span class="detail-text">Sunset</span>
+            </div>
+            <div class="detail-value">7:58 PM</div>
+          </div>
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">☔</span>
+              <span class="detail-text">Precipitation</span>
+            </div>
+            <div class="detail-value">0.2 in</div>
+          </div>
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">💧</span>
+              <span class="detail-text">Humidity</span>
+            </div>
+            <div class="detail-value">65%</div>
+          </div>
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">💨</span>
+              <span class="detail-text">Wind</span>
+            </div>
+            <div class="detail-value">8 mph NW</div>
+          </div>
+          <div class="detail">
+            <div class="detail-label">
+              <span class="detail-icon">📊</span>
+              <span class="detail-text">Pressure</span>
+            </div>
+            <div class="detail-value">1012 hPa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
